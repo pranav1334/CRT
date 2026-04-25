@@ -41,3 +41,10 @@ def Partition(arr,low,high):
     arr[low],arr[j]=arr[j],arr[low]
     return j
 print(Partition([14,7,3,12],0,3))
+
+def QuickSort(arr,low,high):
+    if low < high:
+        pi = Partition(arr,low,high)
+        QuickSort(arr,low,pi-1)
+        QuickSort(arr,pi+1,high)
+print(QuickSort([14,7,3,12],0,3))   
