@@ -1,3 +1,5 @@
+from typing import List
+
 #1.Two sum
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
